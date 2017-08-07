@@ -17,7 +17,7 @@ var fs = require('fs'),
         access_token_secret: process.env.ACCESS_TOKEN_SECRET
       }
     },
-    T = new Twit(config.twitter),
+    T = new Twit(config.twitter);
 
 app.set('port', process.env.PORT || 3000);
 app.use(express.static('public'));
